@@ -1,0 +1,37 @@
+szam_lista = [12, 23, -56, 82, 12.25, 69, -100]
+import feladatok
+szoveg_lista = ["Alma", "Körte", "Szilva", "Szőlő", "alma"]
+import szoveglistak
+
+feladatok.kiiratas(szam_lista)
+print("\n")
+poz: int = feladatok.poz_osszeg(szam_lista)
+print(f"A pozitív számok összege: {poz}")
+print("\n")
+negativ:int = feladatok.hany_negativ(szam_lista)
+print(f"A negatív számok száma: {negativ}")
+print("\n")
+egesz: int = feladatok.nem_egesz(szam_lista)
+print(f"A nem egész számok száma : {egesz}")
+print("\n")
+atlag: int = feladatok.harommal_oszthato(szam_lista)
+print(f"A számok átlaga: {atlag}")
+print("\n")
+max: int = feladatok.legnagyobb_szam(szam_lista)
+print(f"A legnagyobb szám: {max}")
+print("\n")
+min: int = feladatok.legkisebb_szam(szam_lista)
+print(f"A legkisebb szám: {min}")
+print("\n")
+legkis_legna:int = feladatok.legkisebb_legnagyobb(szam_lista)
+print(f"A számok különbsége: {legkis_legna}")
+
+print("\n")
+alma: int = szoveglistak.kisalma_nagyalma(szoveg_lista)
+print(f"Az almák száma: {alma}")
+print("\n")
+sz_betu: int = szoveglistak.sz_betu(szoveg_lista)
+print(f"'Sz' betűsök száma: {sz_betu}")
+print("\n")
+leghosszabb: int = szoveglistak.leghosszabb(szoveg_lista)
+print(f"A leghosszabb szó: {leghosszabb}")
